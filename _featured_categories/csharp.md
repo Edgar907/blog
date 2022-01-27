@@ -10,7 +10,7 @@ slug: csharp
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-    알고리즘 문제 풀이
+    C# 프로그래밍 언어를 공부한 내용 정리
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
