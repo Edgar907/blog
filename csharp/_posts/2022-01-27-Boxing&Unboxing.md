@@ -11,7 +11,7 @@ image: https://images.unsplash.com/photo-1616400619175-5beda3a17896?ixlib=rb-1.2
 * this unordered seed list will be replaced by the toc
 {:toc}
 
-## Boxing(박싱) & Unboxing(언박싱) 개념에 들어가기 전에...
+## 들어가기 전에...
 
 C#에서는 Object가 모든 데이터를 다룰 수 있도록 하기 위해 모든 데이터 타입 및<br>
 개발자들이 직접 정의하는 데이터 타입마저도 자동으로 Object 형식을 상속받는다<br>
