@@ -53,6 +53,8 @@ menu:
     url:               /csharp/
   - title:             Algorithm
     url:               /algorithm/
+  - title:             Effective C#
+    url:               /effective/
   - title:             PS
     url:               /problemsolving/
   - title:             About
