@@ -35,6 +35,11 @@ C#에는 컴파일 타임 상수와 런타임 상수가 있습니다. <br>
 * readonly 키워드로 선언된 상수는 컴파일 타임에는 상수에대한 참조로 컴파일 되고, 런타임에 값이 평가됩니다.
 * const 키워드로 선언된 상수는 컴파일 타임에 값으로 대체됩니다.
 
-## 정리
+# 정리
 결국 성능을 선택한다면 const가 좋을 것이고, 유연성을 선택한다면 readonly가 좋다고 할 수 있습니다. 하지만, 그 차이는 미세하기 때문에
 정말 특수하거나 성능이 아주 중요시되는 경우를 제외하고는 readonly를 사용하는 것을 권장합니다.
+
+# 참조
+- [참조1 - 상수 정의 방법](https://docs.microsoft.com/ko-kr/dotnet/csharp/programming-guide/classes-and-structs/how-to-define-constants)
+- [참조2 - const](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/const)
+- [참조3 - readonly](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/readonly)

@@ -145,3 +145,7 @@ if(i != null)
 **캐스팅을 사용하는 것보단 as 연산자를 사용하는 것이 좋습니다.**
 <br>as 연산자를 사용하는 방법이 더 안전하고 성능면에서도 런타임에 더 효율적으로 동작하기 때문입니다. 하지만 캐스팅과 as 연산자가 
 형변환을 수행한다는 역할은 동일할지라도 동작 방법에서는 차이가 있기 때문에 이를 잘 인지하고 사용해야 예상치 못한 에러를 방지할 수 있습니다.
+
+# 참조
+- [참조1 - 형식 테스트 연산자 및 캐스트 식](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/type-testing-and-cast)
+- [참조2 - 사용자 정의 형변환 연산자](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/operators/user-defined-conversion-operators)
