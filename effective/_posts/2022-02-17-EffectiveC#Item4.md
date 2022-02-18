@@ -133,7 +133,7 @@ The customer's name is Edgar
 
 # 정리
 string.Format()에 비해서는 가독성 및 안정성이 높다고 하지만 역시나 과도하게 사용하면 오히려 더욱 복잡한 코드가
-될 수도 있기 때문에 적적히 사용하는 것이 좋다.
+될 수도 있기 때문에 적절히 사용하는 것이 좋습니다.
 
 # 참조
 - [참조1 - 문자열 보간](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/tokens/interpolated)
