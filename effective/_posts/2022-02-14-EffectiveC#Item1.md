@@ -124,6 +124,7 @@ var query = q.Where(s => s.StartsWith("d"));
 
 ```c#
 List<string> animalList = new List<string> { "dog", "cat", "tuna", "lion", "squid" };
+
 var q =
     from animal in animalList
     select animal;
@@ -133,7 +134,7 @@ var query = q.Where(s => s.StartsWith("d"));
 # 정리
 * 가독성을 해치지 않는 선에서 지역 변수에 var를 사용하는 것이 좋습니다.
 * 정확한 정밀도를 요구하는 숫자 타입에는 var보다는 명시적으로 타입을 작성해주도록 합니다.
-* LINQ를 사용할 때, 그 반환 타입을 제대로 알지 못하는 경우에는 var를 이용하는 것이 성능 저하 문제를 막을 수 있습니다.
+* LINQ를 사용할 때, 그 반환 타입을 제대로 알지 못하는 경우에는 var를 이용하는 것이 오히려 성능 저하 문제를 막을 수 있습니다.
 
 # 참조
 - [참조1 - var](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/var)
