@@ -118,7 +118,7 @@ namespace Item4
         static void Main(string[] args)
         {
             string name1 = null;
-            Console.WriteLine($"The customer's name is {name1?? "Name is missing"}");
+            Console.WriteLine($"The customer's name is {name1 ?? "missing"}");
             string name2 = "Edgar";
             Console.WriteLine($"The customer's name is {name2 ?? "Name is missing"}");
         }
@@ -127,7 +127,7 @@ namespace Item4
 </code></pre>
 
 ## 실행 결과
-<pre><code class="C#">The customer's name is Name is missing
+<pre><code class="C#">The customer's name is missing
 The customer's name is Edgar
 </code></pre>
 
