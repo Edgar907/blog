@@ -113,7 +113,7 @@ IEnumerable<<string>> q =
   from animal in animalList
    select animal;
 
-  var query = q.Where(s => s.StartsWith("d"));
+var query = q.Where(s => s.StartsWith("d"));
 ```
 
 * 위의 코드는 제대로 동작할지라도 심각한 성능 문제를 유발할 수 있습니다. 
@@ -123,25 +123,12 @@ IEnumerable<<string>> q =
 * 수정된 코드는 아래와 같습니다.
 
 ```c#
-using System.Collections.Generic;
-using System.Linq;
+List<string> animalList = new List<string> { "dog", "cat", "tuna", "lion", "squid" };
+var q =
+    from animal in animalList
+    select animal;
 
-namespace Item_1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            List<string> animalList = new List<string> { "dog", "cat", "tuna", "lion", "squid" };
-
-            var q =
-                from animal in animalList
-                select animal;
-
-            var query = q.Where(s => s.StartsWith("d"));
-        }
-    }
-}
+var query = q.Where(s => s.StartsWith("d"));
 ```
 # 정리
 * 가독성을 해치지 않는 선에서 지역 변수에 var를 사용하는 것이 좋습니다.
