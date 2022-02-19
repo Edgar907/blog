@@ -119,7 +119,7 @@ var query = q.Where(s => s.StartsWith("d"));
 * 위의 코드는 제대로 동작할지라도 심각한 성능 문제를 유발할 수 있습니다. 
 * 결과를 받을 변수 q를 개발자가 IEnumerable 타입으로 명시적으로 지정하였기 때문입니다.
 * q의 반환값은 IQueryable인데 이를 명시적으로 IEnumerable로 선언하였기 때문에 IQueryable로 선언하였을 때의 이점은 모두 상실되고 성능 저하라는 문제로 이어집니다.
-* 즉, Linq 구분을 이용할 때 정확한 반환 타입을 모를 때에는 var을 이용하는 것이 좋습니다.
+* 즉, LINQ 구문을 이용할 때 정확한 반환 타입을 모를 때에는 var을 이용하는 것이 좋습니다.
 * 수정된 코드는 아래와 같습니다.
 
 ```c#
@@ -133,7 +133,7 @@ var query = q.Where(s => s.StartsWith("d"));
 # 정리
 * 가독성을 해치지 않는 선에서 지역 변수에 var를 사용하는 것이 좋습니다.
 * 정확한 정밀도를 요구하는 숫자 타입에는 var보다는 명시적으로 타입을 작성해주도록 합니다.
-* Linq를 사용할 때, 그 반환 타입을 제대로 알지 못하는 경우에는 var를 이용하는 것이 성능 저하 문제를 막을 수 있습니다.
+* LINQ를 사용할 때, 그 반환 타입을 제대로 알지 못하는 경우에는 var를 이용하는 것이 성능 저하 문제를 막을 수 있습니다.
 
 # 참조
 - [참조1 - var](https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/var)
