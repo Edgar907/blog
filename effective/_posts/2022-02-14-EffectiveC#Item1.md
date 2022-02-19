@@ -109,7 +109,7 @@ Declared Type : Int64, Value : 166
 ```c#
 List<string> animalList = new List<string> { "dog", "cat", "tuna", "lion", "squid" };
 
-IEnumerable<<string>> q =
+IEnumerable<string> q =
   from animal in animalList
    select animal;
 
