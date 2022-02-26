@@ -71,7 +71,7 @@ public class EventSource
 
 하지만, 모든 이벤트 핸들러에 이와 같은 코드를 작성해놓기엔 여간 복잡해 보이는 것이 아닙니다.
 
-# 너굴맨이 해결했으니 안심하라구!
+# 너굴맨이 처리했으니 안심하라구!
 ![jpg](/assets/img/nugull.png)
 ```c#
 public class EventSource
