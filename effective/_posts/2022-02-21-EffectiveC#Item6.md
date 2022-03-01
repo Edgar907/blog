@@ -30,13 +30,14 @@ image: https://images.unsplash.com/photo-1644329901564-1e47f5d1b81a?ixlib=rb-1.2
         if(value != name)
         {
             name = value
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(name)));
+            PropertyChanged?.Invoke(this, 
+                new PropertyChangedEventArgs(nameof(name)));
         }
     }
 }
 </code></pre>
 
-nameof() 연산자를 사용했기 때문에 프로퍼티의 이름을 변경할 경우에도 이벤트의<br>인자로 전달해야하는 string도 
+nameof() 연산자를 사용했기 때문에 프로퍼티의 이름을 변경할 경우에도 이벤트의 인자로 전달해야하는 string도 
 쉽게 변경이 가능합니다.
 <br>
 또한 심볼의 이름을 평가하며, 타입, 변수, 인터페이스, 네임스페이스 등에 사용할 수 있지만 제네릭 타입을 사용할 경우에는 타입 매개변수를
