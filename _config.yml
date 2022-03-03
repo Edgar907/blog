@@ -57,6 +57,8 @@ menu:
     url:               /effective/
   - title:             PS
     url:               /problemsolving/
+  - title:             Hobby
+    url:               /hobby/
   - title:             About
     url:               /about/
 
@@ -339,6 +341,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-last-modified-at
   - jekyll-avatar
+  - jekyll-youtube
 
 
 # SEO Tag

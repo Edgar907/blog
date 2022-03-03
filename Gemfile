@@ -42,6 +42,7 @@ group :jekyll_plugins do
   gem "jekyll-last-modified-at"
   gem "jekyll-compose"
   gem "kramdown-parser-gfm"
+  gem "jekyll-youtube"
 end
 
 gem 'wdm' if Gem.win_platform?
